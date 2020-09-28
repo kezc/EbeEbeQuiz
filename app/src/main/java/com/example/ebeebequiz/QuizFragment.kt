@@ -49,6 +49,8 @@ class QuizFragment : Fragment() {
 
         viewModel.progress.observe(viewLifecycleOwner, Observer { progress ->
             setProgressAnimate(progress)
+            questionProgress.text =
+                getString(R.string.questionProgress, progress + 1, quizQuestions.size)
         })
 
         viewModel.question.observe(viewLifecycleOwner, Observer { quizQuestion ->
