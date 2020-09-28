@@ -93,6 +93,11 @@
             </RadioGroup>
 
             <Button
+                android:background="#FFF"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="16.0"
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
